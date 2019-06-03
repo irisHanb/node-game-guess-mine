@@ -1,0 +1,20 @@
+{
+  "name": "node-game-guess-mine",
+  "version": "1.0.0",
+  "description": "Realtime Drawing Game built width SocketIO, Gulp and Node",
+  "main": "index.js",
+  "repository": "https://github.com/irisHanb/node-game-guess-mine.git",
+  "author": "irisHanb <fortrulymylife@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
+  }
+}
