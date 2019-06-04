@@ -19,8 +19,14 @@ const handleListening = () => {
 
 var server = app.listen(PORT, handleListening);
 var io = socketIO.listen(server);
+
 io.on('connection', socket => {
-  setTimeout(() => {
-    socket.broadcast.emit('hello');
-  }, 4000);
+  socket.on('newMessage', ({ msg }) => {
+    console.log('new mesage received', msg);
+    socket.broadcast.emit('msgNotifi', {
+      nickname: socket.nickname || 'Anon',
+      msg
+    });
+  });
+  socket.on('setNickname', ({ nickname }) => (socket.nickname = nickname));
 });

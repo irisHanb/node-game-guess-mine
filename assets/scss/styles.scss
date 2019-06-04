@@ -1,0 +1,17 @@
+@import './body';
+
+$color-bg: red;
+
+@keyframes run {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+body {
+  position: sticky;
+  color: red;
+}
