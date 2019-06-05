@@ -22,7 +22,7 @@ var io = socketIO.listen(server);
 
 io.on('connection', socket => {
   socket.on('newMessage', ({ msg }) => {
-    console.log('new mesage received', msg);
+    console.log('new mesage received>> ', msg);
     socket.broadcast.emit('msgNotifi', {
       nickname: socket.nickname || 'Anon',
       msg
