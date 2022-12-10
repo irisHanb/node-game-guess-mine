@@ -19,7 +19,7 @@
     "@babel/preset-env": "^7.4.5",
     "babelify": "^10.0.0",
     "del": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1",
     "pug": "^2.0.3",
